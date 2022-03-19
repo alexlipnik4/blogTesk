@@ -14,7 +14,4 @@ export interface InitialState {
 export interface IGetTranslation {
   language: Language;
   posts: IPost[];
-  // data: {
-  //   text: string;
-  // }[];
 }

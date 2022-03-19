@@ -6,12 +6,9 @@ import { useStyles } from "./blogPage.styles";
 
 const BlogPage = () => {
   const posts = useSelector(selectPosts);
-  const styles = useStyles();
   return (
     <GeneralLayout>
-      <div>
-        <PostListController data={posts} />
-      </div>
+      <PostListController data={posts} />
     </GeneralLayout>
   );
 };
