@@ -12,9 +12,7 @@ export const languageThunk =
   async (dispatch: any) => {
     if (value) {
       try {
-        console.log(value, fromId, toId);
         const response = await getTranslations(value);
-        console.log(response, "fdsfsd");
         dispatch(updatePosts({ data: response, fromId, toId }));
         return response;
       } catch (e) {

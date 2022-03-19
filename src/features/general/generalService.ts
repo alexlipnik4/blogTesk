@@ -29,7 +29,6 @@ export async function getTranslations(value: IGetTranslation) {
       requestOptions
     );
     const info = await response.json();
-    console.log(info, "info");
     return info;
   } catch (e) {
     console.error(e);

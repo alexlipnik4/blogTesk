@@ -26,7 +26,6 @@ export const branchSlice = createSlice({
           counter += 1;
         }
       });
-      console.log(_posts, action.payload.data);
       state.posts = _posts;
     },
     updatePostLikes: (state, action) => {

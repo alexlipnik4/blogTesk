@@ -19,7 +19,6 @@ const PostListController = (props: { data: IPost[] }) => {
 
   React.useMemo(() => {
     if (pages[currentPage]) {
-      console.log("test");
       dispatch(
         languageThunk(
           { language, posts: pages[currentPage] },
